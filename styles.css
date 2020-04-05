@@ -1,0 +1,391 @@
+/*global styles start*/
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #eeeeee;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background: url("images/jeremy-bishop-G9i_plbfDgk-unsplash.jpg") no-repeat
+    center fixed;
+  background-size: cover;
+}
+section {
+  padding: 10rem;
+  scroll-behavior: smooth;
+}
+p {
+  font-size: 2rem;
+}
+a {
+  text-decoration: none;
+  color: #eeeeee;
+  transition: transform 650ms;
+}
+:root {
+  --accent: #ea918d;
+  --accentHover: #de8a86;
+  --dark: #304659;
+  --dark80: rgba(48, 70, 89, 0.8);
+  --dark60: rgba(48, 70, 89, 0.6);
+  --light: #f5f9fc;
+  --transition: all 0.3s ease 0s;
+}
+.section-heading {
+  width: 100%;
+  margin-bottom: 10px;
+}
+/*Photo by Jeremy Bishop on Unsplash*/
+/*global styles end*/
+
+/*Reusable start*/
+.container {
+  width: 90%;
+  max-width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+/*Reusable end*/
+
+/*Header start*/
+header {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li {
+  padding: 10px;
+  list-style: none;
+}
+.logo {
+  cursor: pointer;
+  margin-right: 50px;
+  padding-right: 50px;
+}
+
+.links {
+  margin-left: auto;
+}
+.nav-links a,
+button {
+  font-size: 1.0625rem;
+  font-weight: 400;
+  transition: var(--transition);
+}
+.nav-links a {
+  margin-right: 50px;
+  font-size: 1.8rem;
+}
+.nav-links a:hover {
+  color: var(--accent);
+}
+.button_med {
+  border: none;
+  background-color: var(--accent);
+  padding: 8px 25px;
+  transition: var(--transition);
+  border-radius: 3%;
+  font-size: 1.8rem;
+}
+.button_med:hover {
+  background-color: var(--accentHover);
+}
+
+.landing-text {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  z-index: 1;
+}
+.Landing-text h1 {
+  flex: 1;
+  align-self: center;
+  font-size: 25rem;
+  font-family: "Lobster", "Monoton", sans-serif;
+  background: text-anim;
+  /*animation: text-anim 1s infinite;*/
+  background-image: url("https://images.unsplash.com/photo-1475775030903-8cba2e973b5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+  background-size: 100% 100%;
+  /*background: linear-gradient(to top, #9c1de7, #faee1c);*/
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 1rem;
+  user-select: none;
+}
+.Landing-text h5 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  align-self: center;
+}
+/*Header end*/
+
+/*about start*/
+.me {
+  width: 200px;
+  height: auto;
+  flex: 1;
+  border-radius: 50%;
+}
+.section-heading {
+  line-height: 0;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+}
+
+.section-heading h1 {
+  font-size: 10rem;
+  opacity: 0.3;
+}
+.section-heading h6 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.blurb {
+  margin-top: 10rem;
+  display: flex;
+}
+.blurb p {
+  margin-top: 10rem;
+  flex: 1;
+}
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3rem;
+}
+.skills-list li {
+  list-style: none;
+  align-items: center;
+}
+.skills-list li a {
+  text-decoration: none;
+}
+.Skills-icon {
+  margin-top: 5rem;
+}
+.Skills-icon i {
+  font-size: 5rem;
+  padding: 1rem;
+  transition: color 650ms;
+}
+.icon-link .devicon-angularjs-plain-wordmark {
+  font-size: 8rem;
+}
+.devicon-visualstudio-plain:hover {
+  color: #4267b2;
+}
+.devicon-python-plain:hover {
+  color: #21e6c1;
+}
+.devicon-nodejs-plain:hover {
+  color: #21e6c1;
+}
+.devicon-javascript-plain:hover {
+  color: #faee1c;
+}
+.devicon-html5-plain-wordmark:hover {
+  color: red;
+}
+.devicon-java-plain-wordmark:hover {
+  color: red;
+}
+.devicon-git-plain-wordmark:hover {
+  color: red;
+}
+.devicon-django-plain:hover {
+  color: #21e6c1;
+}
+.devicon-css3-plain-wordmark:hover {
+  color: #278ea5;
+}
+.devicon-c-plain:hover {
+  color: #21e6c1;
+}
+.devicon-angularjs-plain-wordmark:hover {
+  color: red;
+  transform: scale(10%);
+}
+.devicon-confluence-plain-wordmark:hover {
+  color: #278ea5;
+}
+
+/*about end*/
+
+/*portfolio start*/
+.portfolio {
+  display: flex;
+}
+/*portfolio end*/
+
+/*experience start*/
+.experience {
+  display: flex;
+}
+.box {
+  flex: 1;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  border-left: 2px;
+}
+.box ul {
+  border-left: 3px solid #fd367e;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+}
+
+.box ul li {
+  list-style: none;
+}
+.box ul li .item {
+  padding: 2px;
+  position: relative;
+}
+
+.box ul li .item span {
+  color: eee;
+  padding: 2px;
+  margin: auto;
+  line-height: 10px;
+  font-size: 1.8rem;
+}
+.box ul li .item .title {
+  padding: 2px 1px;
+  border-radius: 15px;
+  color: floralwhite;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+.box ul li .item:hover {
+  background: rgba(33, 230, 193, 0.6);
+  transform: scale(1);
+  transition: transform 650ms;
+}
+.box ul li .item:hover .title {
+  transition: transform 650ms;
+  transition: color 650ms;
+  color: #faee1c;
+}
+box ul li .item:hover span {
+  text-transform: capitalize;
+  transition: transform 650ms;
+  transition: color 650ms;
+}
+/*experience end*/
+
+/*contact start*/
+/*contact end*/
+
+/*footer start*/
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0;
+  position: relative;
+  display: flex;
+  margin: auto;
+}
+.up-sign {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  background-color: #0f2027;
+  top: -2.5rem;
+  right: 5rem;
+  border-radius: 100%;
+  display: flex;
+  animation: pulse 2s infinite;
+}
+.up-sign i {
+  color: #eee;
+  font-size: 2rem;
+  margin: auto;
+}
+.copyright p {
+  font-size: 1.4rem;
+  margin: auto;
+}
+/*footer end*/
+
+/*Start Animation*/
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(44, 83, 100, 0.99);
+  }
+  70% {
+    box-shadow: 0 0 0 2rem rgba(44, 83, 100, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(44, 83, 100, 0);
+  }
+}
+@keyframes text-anim {
+  0% {
+    background-image: url("https://images.unsplash.com/photo-1444944232907-0b9e9ace348c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+    background-size: 100% 100%;
+  }
+  10% {
+    background-image: url("https://images.wallpaperscraft.com/image/ocean_sea_water_130044_1920x1080.jpg");
+    background-size: 100% 100%;
+  }
+  20% {
+    background-image: url("https://images.ctfassets.net/cnu0m8re1exe/61SunuCN7XIrVnZBWx5jOz/c01153c28c4b8d468510d58e7785b155/Ocean-Waves.jpg?w=650&h=433&fit=fill");
+    background-size: 100% 100%;
+  }
+  30% {
+    background-image: url("https://images.unsplash.com/photo-1475775030903-8cba2e973b5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+    background-size: 100% 100%;
+  }
+  40% {
+    background-image: url("https://images.unsplash.com/photo-1530715157637-1160cb70d88a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+    background-size: 100% 100%;
+  }
+  50% {
+    background-image: url("https://images.pexels.com/photos/2860705/pexels-photo-2860705.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-size: 100% 100%;
+  }
+  60% {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQP3UqmUzTnFZA4iJQVnc_I4rBH2ffnFjNVUTRNVIgqGuAD3WXk");
+    background-size: 100% 100%;
+  }
+  70% {
+    background-image: url("https://workationlist.com/wp-content/uploads/2018/10/Gorgeous-Sea-HD-Wallpaper.jpg");
+    background-size: 100% 100%;
+  }
+  80% {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSldXj8BWrV9EEUvZxBnQG1A58JAAY7t8v6PlH3aQ3o1Z-sTnAK");
+    background-size: 100% 100%;
+  }
+  90% {
+    background-image: url("https://previews.123rf.com/images/dvorakvero/dvorakvero1806/dvorakvero180600002/102975537-sea-surface-with-waves-and-foam-view-from-above-.jpg");
+    background-size: 100% 100%;
+  }
+  100% {
+    background-image: url("https://toppng.com/uploads/preview/waves-sea-aerial-view-water-surface-dark-11569842118gtb136wuee.jpg");
+    background-size: 100% 100%;
+  }
+}
+/*End Animation*/
